@@ -1,0 +1,296 @@
+/* dark theme */
+
+:root {
+    --primary-color: #CCC;
+    --secondary-color: #131212;
+}
+
+.dark-theme {
+    --primary-color: #131212;
+    --secondary-color: #edf2fc;
+}
+
+/* default background color */
+
+body {
+    background: var(--primary-color);
+    box-sizing: border-box;
+}
+
+/* navigation bar */
+
+#mascot {
+    height: 4em;
+    width: 4em;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+#vertexhacks {
+    margin-left: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+.container p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2em;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--secondary-color);
+}
+
+.container #nametag {
+    border-radius: 50%;
+    border: 2px solid transparent;
+    padding: 6px 8px;
+    background: rgb(62, 200, 222);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ #profileimage img{
+    margin-top: 7em;
+}
+
+.userinfo {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+
+.userinfo h6 {
+    margin-top: 10px;
+}
+
+.userinfo p {
+    margin-top: 6px;
+}
+
+.userinfo i {
+    margin-top: 11px;
+}
+
+.promotion {
+    display: flex;
+}
+
+.promotion p {
+    font-style: italic;
+    font-size: 20px;
+    margin-left: 0.5em;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+section {
+    margin: 2em 5em;
+    padding: 0 10em;
+}
+
+section p {
+    font-size: 1.2em;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+
+section .container .heading {
+    margin: 1em 0;
+    color: var(--secondary-color);
+}
+
+section li {
+    font-size: 1.3em;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 21px;
+}
+
+section ol li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+section .container .hacksimg {
+    width: 70%;
+    height: 70%px;
+    border-radius: 10px;
+}
+
+#promo {
+    text-align: center;
+}
+
+.explaination {
+    padding-left: 2em;
+}
+
+p {
+    padding-left: 1em;
+}
+
+.dark-light{
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: #0cacac;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.dark-light #icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+footer {
+    height: 8em;
+    background: rgb(130, 128, 128);
+}
+
+footer .socials a {
+    font-size: 15px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    padding-top: 2em;
+    text-align: center;
+}
+
+footer i:hover {
+    cursor: pointer;
+    color: #2d66f7;
+}
+
+footer p {
+    text-align: center;
+    padding: 2em auto;
+}
+
+/* responsive page */
+
+@media (max-width: 437px) {
+    #icon {
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    nav .container .icons {
+        padding: 0 0.3em;
+    }
+}
+
+@media (max-width:992px) {
+    nav .container #vertexhacks {
+        margin-right: 19em;
+    }
+}
+
+@media (max-width:531px) {
+    nav .container .icons {
+        padding: 0 0.1em;
+    }
+}
+
+@media (max-width:418px) {
+    .userinfo #nametag {
+        margin-left: 120px;
+    }
+
+    .userinfo p {
+        display: none;
+    }
+
+    .userinfo i {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .promotion {
+        display: inline-block;
+        margin: 0 0.5em;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 555px) {
+    section .container .hacksimg {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1400px) {
+    nav .container .icons {
+        padding: 0 0.3em;
+    }
+
+    .promotion {
+        display: inline-block;
+        margin: 0 0.5em;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        width: 110%;
+    }
+}
